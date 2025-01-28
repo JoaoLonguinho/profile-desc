@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* Cores utilizadas 
+
+Dark blue: #071359
+Blue: #0D208C
+Darker blue: #060E40
+Light Blue: #1F4CA6
+Semi-white: #F2F2F2
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body, html{
+
+}
+main {
+    
+}
+main .first-section{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+}
+#img-desc{
+    width: 200px;
+    margin: 64px 0px;
+}
+#img-desc img{
+    width: 100%;
+    border-radius: 50px;
+    /*border-right: 5px solid #1F4CA6;
+    border-bottom: 5px solid #0D208C;*/
+}
+#img-desc img:hover{
+    /*border-right: 10px solid #1F4CA6;
+    border-bottom: 10px solid #0D208C;
+    margin-top: -10px;
+    margin-left: -10px;*/
+}
+#img-desc h1,
+#img-desc h2{
+    text-align: center;
+    font-size: 1.2em;
+}
+#menu-container{
+    width: 100%;
+    background-color: #060E40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+menu{
+    display: none;
+}
+.show{
+    display: flex !important;
+}
+.hide{
+    display: none !important;
+}
+.material-symbols-outlined{
+    color: #F2F2F2;
+    font-weight: 600;
+    width: 25px;
+    text-align: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 5px;
+    display: block;
+}
+.material-symbols-outlined:hover{
+    cursor: pointer;
+}
+#menu-container > menu > ul {
+    list-style-type: none;
+    width: 100%;
+    padding-bottom: 10px ;
+    padding-inline-start: 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#menu-container > menu > ul > li > a{
+    text-decoration: none;
+    color: #F2F2F2;
+    width: 100%;
+    padding: 10px 24px;
+    font-weight: 500;
+}
+#menu-container > menu > ul > li > a:hover{
+    background-color: #F2F2F2;
+    color: #1F4CA6;
+    padding-left: 50px;
+    transition: 0.5s;
+}
+#exp{
+    display: flex;
+    flex-direction: column;
+    margin: 64px 0px;
+    padding: 64px 24px;
+    background-color: #F2F2F2;
+}
+#exp{
+    display: none;
+}
+
+#exp h1{
+    color: #060E40;
+    margin-bottom: 24px;;
+}
+#exp ul{
+    list-style-type: none;
+    column-count: 2;
+    margin: 64px 0px;
+}
+#exp ul li{
+    line-height: 2em;
+}

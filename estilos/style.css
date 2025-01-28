@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Cores utilizadas 
+
+Dark blue: #071359
+Blue: #0D208C
+Darker blue: #060E40
+Light Blue: #1F4CA6
+Semi-white: #F2F2F2
+
+*/
+
+@media screen and (min-width: 768px){
+    body, html{
+        box-sizing: border-box;
+    }
+    
+    main{
+        
+    }
+    main .first-section{
+        flex-direction: row;
+        height: 100vh;
+    }
+    #img-desc{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #img-desc img{
+        width: 30%;
+    }
+    #menu-container{
+        width: 30%;
+        height: 100vh;
+    }
+    .material-symbols-outlined{
+        display: none !important;
+    }
+    menu { 
+        display: block;
+    }
+    menu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    #menu-container > menu > ul{
+        padding-bottom: 0;
+    }
+    #menu-container > menu > ul > li > a{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 922px){
+    
+}

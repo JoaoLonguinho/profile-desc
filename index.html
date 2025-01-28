@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/mobile.css">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Meu perfil</title>
+</head>
+<body>
+    <main>
+        <section class="first-section" id="first-content">
+            <section id="img-desc">
+                <img src="img/profilepic.png" alt="Foto perfil">
+                <h1>João Longuinho</h1>
+                <h2>Desenvolvedor Full Stack</h2>
+            </section>
+            <section id="menu-container">
+                <span class="material-symbols-outlined" onclick="showMenu()">
+                    menu
+                </span>
+                <menu id="main-menu">
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="#" onclick="showExp()">Experiências</a></li>
+                        <li><a href="">Trajetoria</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </menu>
+            </section>
+        </section>
+        <section id="exp"> 
+            <h1>Experiências</h1>
+            <p>Focado em sempre me desenvolver na área de técnologia, já com o foco em me tornar programador, tive a oportunidade de trabalhar com diversas técnologias, até o momento atual, sendo elas:</p>
+            <ul>
+                <li>Hospedagens;</li>
+                <li>Banco de dados (SQL, MYSQL)</li>
+                <li>HTML;</li>
+                <li>CSS;</li>
+                <li>JS;</li>
+                <li>WORDPRESS;</li>
+                <li>PHP;</li>
+            </ul>   
+        </section>
+    </main>
+    <script>
+        function showMenu(){
+            let mainMenu = document.getElementById('main-menu')
+            mainMenu.classList.toggle('show')
+        }
+        function showExp(){
+            let exp = document.getElementById('exp')
+            exp.classList.toggle('show')
+            let firstContent = document.getElementById('img-desc')
+            firstContent.classList.toggle('hide')
+        }
+    </script>
+</body>
+</html>
