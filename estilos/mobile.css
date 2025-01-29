@@ -110,18 +110,32 @@ menu{
     background-color: #F2F2F2;
 }
 #exp{
-    display: none;
+    /*display: none;*/
+    background-color: #060E40;
 }
 
 #exp h1{
-    color: #060E40;
+    color: white;
     margin-bottom: 24px;;
 }
+#exp p{
+    color: white;
+}
 #exp ul{
+    color: white;
     list-style-type: none;
-    column-count: 2;
-    margin: 64px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 24px 0px;
+    gap: 8px;
+    box-sizing: border-box;
 }
 #exp ul li{
     line-height: 2em;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 200px;
+    margin: auto;
 }
