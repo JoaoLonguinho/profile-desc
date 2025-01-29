@@ -136,6 +136,7 @@ menu{
     border: 1px solid white;
     text-align: center;
     border-radius: 10px;
-    min-width: 200px;
+    min-width: 150px;
+    width: 48%;
     margin: auto;
 }
