@@ -105,12 +105,12 @@ menu{
 #exp{
     display: flex;
     flex-direction: column;
-    margin: 64px 0px;
+    
     padding: 64px 24px;
     background-color: #F2F2F2;
 }
 #exp{
-    /*display: none;*/
+    display: none;
     background-color: #060E40;
 }
 
