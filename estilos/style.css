@@ -53,6 +53,22 @@ Semi-white: #F2F2F2
     #menu-container > menu > ul > li > a{
         width: 100%;
     }
+    #exp{
+        width: 70%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+    #exp h1,
+    #exp p,
+    #exp ul{
+        max-width: 600px;
+    }
+    .change-to-row-reverse{
+        flex-direction: row-reverse !important;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 922px){
     

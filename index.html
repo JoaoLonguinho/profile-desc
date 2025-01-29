@@ -29,25 +29,28 @@
                     </ul>
                 </menu>
             </section>
-        </section>
-        <section id="exp"> 
-            <h1>Experiências</h1>
-            <p>Focado em sempre me desenvolver na área de técnologia, já com o foco em me tornar programador, tive a oportunidade de trabalhar com diversas técnologias, até o momento atual, sendo elas:</p>
-            <ul>
-                <li>Hospedagens;</li>
-                <li>SQL</li>
-                <li> MYSQL</li>
-                <li>HTML;</li>
-                <li>CSS;</li>
-                <li>JS;</li>
-                <li>WORDPRESS;</li>
-                <li>PHP.</li>
-            </ul>   
+            <section id="exp"> 
+                <h1>Experiências</h1>
+                <p>Focado em sempre me desenvolver na área de técnologia, já com o foco em me tornar programador, tive a oportunidade de trabalhar com diversas técnologias, até o momento atual, sendo elas:</p>
+                <ul>
+                    <li>Hospedagens;</li>
+                    <li>SQL</li>
+                    <li> MYSQL</li>
+                    <li>HTML;</li>
+                    <li>CSS;</li>
+                    <li>JS;</li>
+                    <li>WORDPRESS;</li>
+                    <li>PHP.</li>
+                </ul>   
+            </section>
         </section>
     </main>
     <script>
+        let mainMenu = document.getElementById('main-menu')
+        function closeMenu(){
+            mainMenu.classList.toggle('hide')
+        }
         function showMenu(){
-            let mainMenu = document.getElementById('main-menu')
             mainMenu.classList.toggle('show')
         }
         function showExp(){
@@ -55,6 +58,14 @@
             exp.classList.toggle('show')
             let firstContent = document.getElementById('img-desc')
             firstContent.classList.toggle('hide')
+            let mainContainer = document.getElementById('first-content');
+            
+            if(window.innerWidth > 768){
+                mainContainer.classList.toggle('change-to-row-reverse');
+            }
+            if(window.innerWidth < 768){
+                mainContainer.classList.toggle('change-to-column')
+            }
         }
     </script>
 </body>
