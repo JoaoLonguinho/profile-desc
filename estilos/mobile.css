@@ -127,7 +127,7 @@ menu{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 24px 0px;
+    margin: 24px 0px 0px 0px;
     gap: 8px;
     box-sizing: border-box;
 }
